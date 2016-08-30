@@ -57,7 +57,8 @@
 }
 
 #pragma mark - UITextFieldDelegate
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if ([self.delegate respondsToSelector:@selector(searchButtonWasPressedForSearchDetailView:)]) {
         [self.delegate searchButtonWasPressedForSearchDetailView:self];
     }
