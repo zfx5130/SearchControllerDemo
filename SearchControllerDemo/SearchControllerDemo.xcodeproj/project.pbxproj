@@ -15,6 +15,16 @@
 		847074041D756D7F00D6F90B /* SearchControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 847074031D756D7F00D6F90B /* SearchControllerDemoTests.m */; };
 		8470740F1D756D7F00D6F90B /* SearchControllerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8470740E1D756D7F00D6F90B /* SearchControllerDemoUITests.m */; };
 		847074231D756F8C00D6F90B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847074221D756F8C00D6F90B /* SearchViewController.m */; };
+		847074261D75724000D6F90B /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847074251D75724000D6F90B /* SearchView.m */; };
+		847074281D75725100D6F90B /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847074271D75725100D6F90B /* SearchView.xib */; };
+		8470742C1D757F3E00D6F90B /* SearchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8470742A1D757F3E00D6F90B /* SearchDetailViewController.m */; };
+		8470742D1D757F3E00D6F90B /* SearchDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8470742B1D757F3E00D6F90B /* SearchDetailViewController.xib */; };
+		847074301D7581F400D6F90B /* SearchDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8470742F1D7581F400D6F90B /* SearchDetailView.m */; };
+		847074321D75820300D6F90B /* SearchDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847074311D75820300D6F90B /* SearchDetailView.xib */; };
+		84E2A1BD1D75940E003743D7 /* SearchTagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E2A1BB1D75940E003743D7 /* SearchTagTableViewCell.m */; };
+		84E2A1BE1D75940E003743D7 /* SearchTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E2A1BC1D75940E003743D7 /* SearchTagTableViewCell.xib */; };
+		84E2A1C21D75941F003743D7 /* SearchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E2A1C01D75941F003743D7 /* SearchResultTableViewCell.m */; };
+		84E2A1C31D75941F003743D7 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E2A1C11D75941F003743D7 /* SearchResultTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,21 @@
 		847074101D756D7F00D6F90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847074211D756F8C00D6F90B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		847074221D756F8C00D6F90B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		847074241D75724000D6F90B /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		847074251D75724000D6F90B /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		847074271D75725100D6F90B /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		847074291D757F3E00D6F90B /* SearchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDetailViewController.h; sourceTree = "<group>"; };
+		8470742A1D757F3E00D6F90B /* SearchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDetailViewController.m; sourceTree = "<group>"; };
+		8470742B1D757F3E00D6F90B /* SearchDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchDetailViewController.xib; sourceTree = "<group>"; };
+		8470742E1D7581F400D6F90B /* SearchDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDetailView.h; sourceTree = "<group>"; };
+		8470742F1D7581F400D6F90B /* SearchDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDetailView.m; sourceTree = "<group>"; };
+		847074311D75820300D6F90B /* SearchDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchDetailView.xib; sourceTree = "<group>"; };
+		84E2A1BA1D75940E003743D7 /* SearchTagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTagTableViewCell.h; sourceTree = "<group>"; };
+		84E2A1BB1D75940E003743D7 /* SearchTagTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTagTableViewCell.m; sourceTree = "<group>"; };
+		84E2A1BC1D75940E003743D7 /* SearchTagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTagTableViewCell.xib; sourceTree = "<group>"; };
+		84E2A1BF1D75941F003743D7 /* SearchResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultTableViewCell.h; sourceTree = "<group>"; };
+		84E2A1C01D75941F003743D7 /* SearchResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultTableViewCell.m; sourceTree = "<group>"; };
+		84E2A1C11D75941F003743D7 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +131,21 @@
 				847073F21D756D7F00D6F90B /* Main.storyboard */,
 				847074211D756F8C00D6F90B /* SearchViewController.h */,
 				847074221D756F8C00D6F90B /* SearchViewController.m */,
+				847074291D757F3E00D6F90B /* SearchDetailViewController.h */,
+				8470742A1D757F3E00D6F90B /* SearchDetailViewController.m */,
+				8470742B1D757F3E00D6F90B /* SearchDetailViewController.xib */,
+				847074241D75724000D6F90B /* SearchView.h */,
+				847074251D75724000D6F90B /* SearchView.m */,
+				847074271D75725100D6F90B /* SearchView.xib */,
+				8470742E1D7581F400D6F90B /* SearchDetailView.h */,
+				8470742F1D7581F400D6F90B /* SearchDetailView.m */,
+				847074311D75820300D6F90B /* SearchDetailView.xib */,
+				84E2A1BA1D75940E003743D7 /* SearchTagTableViewCell.h */,
+				84E2A1BB1D75940E003743D7 /* SearchTagTableViewCell.m */,
+				84E2A1BC1D75940E003743D7 /* SearchTagTableViewCell.xib */,
+				84E2A1BF1D75941F003743D7 /* SearchResultTableViewCell.h */,
+				84E2A1C01D75941F003743D7 /* SearchResultTableViewCell.m */,
+				84E2A1C11D75941F003743D7 /* SearchResultTableViewCell.xib */,
 				847073F51D756D7F00D6F90B /* Assets.xcassets */,
 				847073F71D756D7F00D6F90B /* LaunchScreen.storyboard */,
 				847073FA1D756D7F00D6F90B /* Info.plist */,
@@ -243,9 +283,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847074281D75725100D6F90B /* SearchView.xib in Resources */,
+				847074321D75820300D6F90B /* SearchDetailView.xib in Resources */,
 				847073F91D756D7F00D6F90B /* LaunchScreen.storyboard in Resources */,
 				847073F61D756D7F00D6F90B /* Assets.xcassets in Resources */,
+				84E2A1BE1D75940E003743D7 /* SearchTagTableViewCell.xib in Resources */,
 				847073F41D756D7F00D6F90B /* Main.storyboard in Resources */,
+				84E2A1C31D75941F003743D7 /* SearchResultTableViewCell.xib in Resources */,
+				8470742D1D757F3E00D6F90B /* SearchDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847074261D75724000D6F90B /* SearchView.m in Sources */,
 				847073EE1D756D7F00D6F90B /* AppDelegate.m in Sources */,
+				84E2A1BD1D75940E003743D7 /* SearchTagTableViewCell.m in Sources */,
+				8470742C1D757F3E00D6F90B /* SearchDetailViewController.m in Sources */,
 				847074231D756F8C00D6F90B /* SearchViewController.m in Sources */,
 				847073EB1D756D7F00D6F90B /* main.m in Sources */,
+				84E2A1C21D75941F003743D7 /* SearchResultTableViewCell.m in Sources */,
+				847074301D7581F400D6F90B /* SearchDetailView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SearchControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thomas.SearchControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SearchControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thomas.SearchControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +550,7 @@
 				847074151D756D7F00D6F90B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		847074161D756D7F00D6F90B /* Build configuration list for PBXNativeTarget "SearchControllerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +559,7 @@
 				847074181D756D7F00D6F90B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		847074191D756D7F00D6F90B /* Build configuration list for PBXNativeTarget "SearchControllerDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +568,7 @@
 				8470741B1D756D7F00D6F90B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
