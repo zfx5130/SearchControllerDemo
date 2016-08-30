@@ -59,6 +59,7 @@
 #pragma mark - UITextFieldDelegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self.textField resignFirstResponder];
     if ([self.delegate respondsToSelector:@selector(searchButtonWasPressedForSearchDetailView:)]) {
         [self.delegate searchButtonWasPressedForSearchDetailView:self];
     }
@@ -68,6 +69,7 @@
 #pragma mark - Handlers
 
 - (IBAction)dismissButtonWasPressed:(UIButton *)sender {
+    [self.textField resignFirstResponder];
     if ([self.delegate respondsToSelector:@selector(dismissButtonWasPressedForSearchDetailView:)]) {
         [self.delegate dismissButtonWasPressedForSearchDetailView:self];
     }

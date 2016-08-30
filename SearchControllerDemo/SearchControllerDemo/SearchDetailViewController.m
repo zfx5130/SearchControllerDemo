@@ -63,7 +63,6 @@ UITableViewDataSource>
 #pragma mark - SearchDetailViewDelegate
 
 - (void)dismissButtonWasPressedForSearchDetailView:(SearchDetailView *)searchView {
-    [self.view endEditing:YES];
     [self dismissViewControllerAnimated:YES
                              completion:nil];
 }
