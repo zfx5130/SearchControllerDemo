@@ -19,6 +19,8 @@ UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *searchTagTableView;
 @property (weak, nonatomic) IBOutlet UITableView *searchResultTableView;
 
+@property (strong, nonatomic) SearchDetailView *searchDetailView;
+
 @end
 
 @implementation SearchDetailViewController
@@ -39,11 +41,11 @@ UITableViewDataSource>
 
 - (void)setupSearchView {
     self.navigationController.navigationBar.translucent = NO;
-    SearchDetailView *searchView = [[SearchDetailView alloc] initWithFrame:CGRectMake(0, 3, [UIScreen mainScreen].bounds.size.width, 30)];
-    searchView.textField.placeholder = self.placeHolderText;
-    searchView.delegate = self;
-    [searchView.textField becomeFirstResponder];
-    [self.navigationController.navigationBar addSubview:searchView];
+    self.searchDetailView = [[SearchDetailView alloc] initWithFrame:CGRectMake(0, 3, [UIScreen mainScreen].bounds.size.width, 30)];
+    self.searchDetailView.textField.placeholder = self.placeHolderText;
+    self.searchDetailView.delegate = self;
+    [self.searchDetailView.textField becomeFirstResponder];
+    [self.navigationController.navigationBar addSubview:self.searchDetailView];
 }
 
 - (void)registerCells {
@@ -63,7 +65,7 @@ UITableViewDataSource>
 #pragma mark - SearchDetailViewDelegate
 
 - (void)dismissButtonWasPressedForSearchDetailView:(SearchDetailView *)searchView {
-    [self dismissViewControllerAnimated:YES
+    [self dismissViewControllerAnimated:NO
                              completion:nil];
 }
 
@@ -75,6 +77,12 @@ UITableViewDataSource>
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"indexPath:::::%@", indexPath);
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    if (self.searchDetailView) {
+        [self.searchDetailView.textField resignFirstResponder];
+    }
 }
 
 #pragma mark - UITableViewDataSource
