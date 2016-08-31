@@ -25,6 +25,10 @@
 		848FDFD81D76736D005EB2A4 /* SearchTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FDFCF1D76736D005EB2A4 /* SearchTagTableViewCell.xib */; };
 		848FDFD91D76736D005EB2A4 /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFD11D76736D005EB2A4 /* SearchView.m */; };
 		848FDFDA1D76736D005EB2A4 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FDFD21D76736D005EB2A4 /* SearchView.xib */; };
+		848FDFDD1D76796D005EB2A4 /* SearchTagHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFDC1D76796D005EB2A4 /* SearchTagHeadView.m */; };
+		848FDFDF1D76797D005EB2A4 /* SearchTagHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FDFDE1D76797D005EB2A4 /* SearchTagHeadView.xib */; };
+		848FDFE51D768C55005EB2A4 /* EYTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFE21D768C55005EB2A4 /* EYTagView.m */; };
+		848FDFE61D768C55005EB2A4 /* EYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFE41D768C55005EB2A4 /* EYTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,13 @@
 		848FDFD01D76736D005EB2A4 /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
 		848FDFD11D76736D005EB2A4 /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
 		848FDFD21D76736D005EB2A4 /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		848FDFDB1D76796D005EB2A4 /* SearchTagHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTagHeadView.h; sourceTree = "<group>"; };
+		848FDFDC1D76796D005EB2A4 /* SearchTagHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTagHeadView.m; sourceTree = "<group>"; };
+		848FDFDE1D76797D005EB2A4 /* SearchTagHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTagHeadView.xib; sourceTree = "<group>"; };
+		848FDFE11D768C55005EB2A4 /* EYTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYTagView.h; sourceTree = "<group>"; };
+		848FDFE21D768C55005EB2A4 /* EYTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYTagView.m; sourceTree = "<group>"; };
+		848FDFE31D768C55005EB2A4 /* EYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYTextField.h; sourceTree = "<group>"; };
+		848FDFE41D768C55005EB2A4 /* EYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +140,7 @@
 				848FDFBA1D7672F1005EB2A4 /* AppDelegate */,
 				848FDFB91D7672D3005EB2A4 /* SearchController */,
 				848FDFC61D767349005EB2A4 /* SearchView */,
+				848FDFE01D768C46005EB2A4 /* EYTagView */,
 				847073F51D756D7F00D6F90B /* Assets.xcassets */,
 				847073F71D756D7F00D6F90B /* LaunchScreen.storyboard */,
 				847073FA1D756D7F00D6F90B /* Info.plist */,
@@ -200,8 +212,22 @@
 				848FDFD01D76736D005EB2A4 /* SearchView.h */,
 				848FDFD11D76736D005EB2A4 /* SearchView.m */,
 				848FDFD21D76736D005EB2A4 /* SearchView.xib */,
+				848FDFDB1D76796D005EB2A4 /* SearchTagHeadView.h */,
+				848FDFDC1D76796D005EB2A4 /* SearchTagHeadView.m */,
+				848FDFDE1D76797D005EB2A4 /* SearchTagHeadView.xib */,
 			);
 			path = SearchView;
+			sourceTree = "<group>";
+		};
+		848FDFE01D768C46005EB2A4 /* EYTagView */ = {
+			isa = PBXGroup;
+			children = (
+				848FDFE11D768C55005EB2A4 /* EYTagView.h */,
+				848FDFE21D768C55005EB2A4 /* EYTagView.m */,
+				848FDFE31D768C55005EB2A4 /* EYTextField.h */,
+				848FDFE41D768C55005EB2A4 /* EYTextField.m */,
+			);
+			path = EYTagView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +337,7 @@
 				848FDFD61D76736D005EB2A4 /* SearchResultTableViewCell.xib in Resources */,
 				847073F91D756D7F00D6F90B /* LaunchScreen.storyboard in Resources */,
 				847073F61D756D7F00D6F90B /* Assets.xcassets in Resources */,
+				848FDFDF1D76797D005EB2A4 /* SearchTagHeadView.xib in Resources */,
 				847073F41D756D7F00D6F90B /* Main.storyboard in Resources */,
 				848FDFD81D76736D005EB2A4 /* SearchTagTableViewCell.xib in Resources */,
 				848FDFD41D76736D005EB2A4 /* SearchDetailView.xib in Resources */,
@@ -339,11 +366,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848FDFE61D768C55005EB2A4 /* EYTextField.m in Sources */,
 				848FDFD91D76736D005EB2A4 /* SearchView.m in Sources */,
 				848FDFD51D76736D005EB2A4 /* SearchResultTableViewCell.m in Sources */,
 				847073EB1D756D7F00D6F90B /* main.m in Sources */,
+				848FDFE51D768C55005EB2A4 /* EYTagView.m in Sources */,
 				848FDFD71D76736D005EB2A4 /* SearchTagTableViewCell.m in Sources */,
 				848FDFC51D767336005EB2A4 /* AppDelegate.m in Sources */,
+				848FDFDD1D76796D005EB2A4 /* SearchTagHeadView.m in Sources */,
 				848FDFC21D767329005EB2A4 /* SearchViewController.m in Sources */,
 				848FDFD31D76736D005EB2A4 /* SearchDetailView.m in Sources */,
 				848FDFC01D767329005EB2A4 /* SearchDetailViewController.m in Sources */,

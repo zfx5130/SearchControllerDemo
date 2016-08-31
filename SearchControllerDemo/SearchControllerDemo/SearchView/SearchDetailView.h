@@ -15,6 +15,8 @@
 
 - (void)searchButtonWasPressedForSearchDetailView:(SearchDetailView *)searchView;
 
+- (void)textFieldEditingChangedForSearchDetailView:(SearchDetailView *)searchView;
+
 @end
 
 @interface SearchDetailView : UIView

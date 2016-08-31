@@ -66,6 +66,13 @@
     return YES;
 }
 
+- (IBAction)textFieldEditingChanged:(UITextField *)sender {
+    if ([self.delegate respondsToSelector:@selector(textFieldEditingChangedForSearchDetailView:)]) {
+        [self.delegate textFieldEditingChangedForSearchDetailView:self];
+    }
+}
+
+
 #pragma mark - Handlers
 
 - (IBAction)dismissButtonWasPressed:(UIButton *)sender {

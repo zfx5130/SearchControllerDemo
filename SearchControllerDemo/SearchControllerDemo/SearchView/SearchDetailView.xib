@@ -22,12 +22,16 @@
                     <color key="textColor" red="0.31764705879999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <connections>
+                        <action selector="textFieldEditingChanged:" destination="-1" eventType="editingChanged" id="AwU-3v-JaN"/>
+                    </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfX-EG-V3Y">
                     <rect key="frame" x="316" y="0.0" width="59" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="59" id="5Wh-JZ-Lnc"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <state key="normal" title="取消">
                         <color key="titleColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
