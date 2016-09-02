@@ -84,7 +84,7 @@ UITableViewDataSource>
             tag.padding = UIEdgeInsetsMake(8, 8, 8, 8);
             tag.cornerRadius = 8;
             tag.borderColor = [UIColor lightGrayColor];
-            tag.borderWidth = 1.0f;
+            tag.borderWidth = .5f;
             tag.bgImg = [UIImage imageWithColor:[UIColor whiteColor]];
             tag.enable = NO;
             [cell.tagView addTag:tag];
@@ -97,7 +97,7 @@ UITableViewDataSource>
             tag.padding = UIEdgeInsetsMake(8, 8, 8, 8);
             tag.cornerRadius = 8;
             tag.borderColor = [UIColor lightGrayColor];
-            tag.borderWidth = 1.0f;
+            tag.borderWidth = .5f;
             tag.bgImg = [UIImage imageWithColor:[UIColor whiteColor]];
             tag.enable = NO;
             [cell.tagView addTag:tag];
