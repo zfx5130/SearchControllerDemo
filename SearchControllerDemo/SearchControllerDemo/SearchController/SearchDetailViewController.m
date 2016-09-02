@@ -47,6 +47,7 @@ UITableViewDataSource>
 @property (strong, nonatomic) SearchDetailView *searchDetailView;
 
 @property (copy, nonatomic) NSArray *tags;
+@property (copy, nonatomic) NSArray *historyTags;
 @property (copy, nonatomic) NSArray *colors;
 
 @end
@@ -59,11 +60,6 @@ UITableViewDataSource>
     [super viewDidLoad];
     [self setupSearchView];
     [self registerCells];
-    self.colors = @[
-                    [UIColor redColor],
-                    [UIColor greenColor],
-                    [UIColor blueColor]
-                    ];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,23 +71,38 @@ UITableViewDataSource>
 - (void)configureCell:(SearchTagTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
     cell.tagView.preferredMaxLayoutWidth = [UIScreen mainScreen].bounds.size.width;
-    cell.tagView.padding = UIEdgeInsetsMake(12, 12, 12, 12);
-    cell.tagView.interitemSpacing = 15;
+    cell.tagView.padding = UIEdgeInsetsMake(0, 10, 0, 10);
+    cell.tagView.interitemSpacing = 10;
     cell.tagView.lineSpacing = 10;
     [cell.tagView removeAllTags];
     
-    //Add Tags
-    NSLog(@":::%@", self.tags);
-    [self.tags enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        SKTag *tag = [SKTag tagWithText:obj];
-        tag.textColor = [UIColor whiteColor];
-        tag.fontSize = 15;
-        tag.padding = UIEdgeInsetsMake(13.5, 12.5, 13.5, 12.5);
-        tag.cornerRadius = 5;
-        tag.bgImg = [UIImage imageWithColor:self.colors[idx % self.colors.count]];
-        tag.enable = NO;
-        [cell.tagView addTag:tag];
-    }];
+    if (indexPath.section == 0) {
+        [self.historyTags enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            SKTag *tag = [SKTag tagWithText:obj];
+            tag.textColor =  [UIColor colorWithRed:81 / 255.0f green:81 / 255.0f blue:81/255.0f alpha:1.0f];
+            tag.fontSize = 14;
+            tag.padding = UIEdgeInsetsMake(8, 8, 8, 8);
+            tag.cornerRadius = 8;
+            tag.borderColor = [UIColor lightGrayColor];
+            tag.borderWidth = 1.0f;
+            tag.bgImg = [UIImage imageWithColor:[UIColor whiteColor]];
+            tag.enable = NO;
+            [cell.tagView addTag:tag];
+        }];
+    } else {
+        [self.tags enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            SKTag *tag = [SKTag tagWithText:obj];
+            tag.textColor = self.colors[idx % self.colors.count];
+            tag.fontSize = 14;
+            tag.padding = UIEdgeInsetsMake(8, 8, 8, 8);
+            tag.cornerRadius = 8;
+            tag.borderColor = [UIColor lightGrayColor];
+            tag.borderWidth = 1.0f;
+            tag.bgImg = [UIImage imageWithColor:[UIColor whiteColor]];
+            tag.enable = NO;
+            [cell.tagView addTag:tag];
+        }];
+    }
 }
 
 - (void)setupSearchView {
@@ -125,12 +136,38 @@ UITableViewDataSource>
 - (NSArray *)tags {
     if (!_tags) {
         _tags = @[
-                  @"AutoLayout", @"dynamically", @"calculates", @"the", @"size", @"and", @"position",
-                  @"of", @"all", @"the", @"views", @"in", @"your", @"view", @"hierarchy", @"based",
-                  @"on", @"constraints"
+                  @"KISSBABY",
+                  @"湿巾",
+                  @"吸管杯",
+                  @"火火兔",
+                  @"压脚",
+                  @"退热贴",
+                  @"答复发送到"
                   ];
     }
     return _tags;
+}
+
+- (NSArray *)historyTags {
+    if (!_historyTags) {
+        _historyTags = @[@"呵呵呵呵",
+                         @"面膜",
+                         @"火兔",
+                         @"挖地方",
+                         @"阿道夫"];
+    }
+    return _historyTags;
+}
+
+
+- (NSArray *)colors {
+    if (!_colors) {
+        _colors = @[
+                    [UIColor colorWithRed:245 / 255.0f green:86 / 255.0f blue:160 / 255.0f alpha:1.0f],
+                    [UIColor colorWithRed:81 / 255.0f green:81 / 255.0f blue:81/255.0f alpha:1.0f]
+                    ];
+    }
+    return _colors;
 }
 
 #pragma mark - SearchDetailViewDelegate
