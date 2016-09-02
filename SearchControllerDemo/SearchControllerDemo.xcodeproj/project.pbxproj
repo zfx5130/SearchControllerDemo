@@ -27,8 +27,11 @@
 		848FDFDA1D76736D005EB2A4 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FDFD21D76736D005EB2A4 /* SearchView.xib */; };
 		848FDFDD1D76796D005EB2A4 /* SearchTagHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFDC1D76796D005EB2A4 /* SearchTagHeadView.m */; };
 		848FDFDF1D76797D005EB2A4 /* SearchTagHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FDFDE1D76797D005EB2A4 /* SearchTagHeadView.xib */; };
-		848FDFE51D768C55005EB2A4 /* EYTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFE21D768C55005EB2A4 /* EYTagView.m */; };
-		848FDFE61D768C55005EB2A4 /* EYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFE41D768C55005EB2A4 /* EYTextField.m */; };
+		848FDFF61D76CFCC005EB2A4 /* TTGTagCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFED1D76CFCC005EB2A4 /* TTGTagCollectionCell.m */; };
+		848FDFF71D76CFCC005EB2A4 /* TTGTagCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFEF1D76CFCC005EB2A4 /* TTGTagCollectionLayout.m */; };
+		848FDFF81D76CFCC005EB2A4 /* TTGTagCollectionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFF11D76CFCC005EB2A4 /* TTGTagCollectionUtil.m */; };
+		848FDFF91D76CFCC005EB2A4 /* TTGTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFF31D76CFCC005EB2A4 /* TTGTagCollectionView.m */; };
+		848FDFFA1D76CFCC005EB2A4 /* TTGTextTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFF51D76CFCC005EB2A4 /* TTGTextTagCollectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,10 +86,16 @@
 		848FDFDB1D76796D005EB2A4 /* SearchTagHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTagHeadView.h; sourceTree = "<group>"; };
 		848FDFDC1D76796D005EB2A4 /* SearchTagHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTagHeadView.m; sourceTree = "<group>"; };
 		848FDFDE1D76797D005EB2A4 /* SearchTagHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTagHeadView.xib; sourceTree = "<group>"; };
-		848FDFE11D768C55005EB2A4 /* EYTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYTagView.h; sourceTree = "<group>"; };
-		848FDFE21D768C55005EB2A4 /* EYTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYTagView.m; sourceTree = "<group>"; };
-		848FDFE31D768C55005EB2A4 /* EYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYTextField.h; sourceTree = "<group>"; };
-		848FDFE41D768C55005EB2A4 /* EYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYTextField.m; sourceTree = "<group>"; };
+		848FDFEC1D76CFCC005EB2A4 /* TTGTagCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGTagCollectionCell.h; sourceTree = "<group>"; };
+		848FDFED1D76CFCC005EB2A4 /* TTGTagCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGTagCollectionCell.m; sourceTree = "<group>"; };
+		848FDFEE1D76CFCC005EB2A4 /* TTGTagCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGTagCollectionLayout.h; sourceTree = "<group>"; };
+		848FDFEF1D76CFCC005EB2A4 /* TTGTagCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGTagCollectionLayout.m; sourceTree = "<group>"; };
+		848FDFF01D76CFCC005EB2A4 /* TTGTagCollectionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGTagCollectionUtil.h; sourceTree = "<group>"; };
+		848FDFF11D76CFCC005EB2A4 /* TTGTagCollectionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGTagCollectionUtil.m; sourceTree = "<group>"; };
+		848FDFF21D76CFCC005EB2A4 /* TTGTagCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGTagCollectionView.h; sourceTree = "<group>"; };
+		848FDFF31D76CFCC005EB2A4 /* TTGTagCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGTagCollectionView.m; sourceTree = "<group>"; };
+		848FDFF41D76CFCC005EB2A4 /* TTGTextTagCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGTextTagCollectionView.h; sourceTree = "<group>"; };
+		848FDFF51D76CFCC005EB2A4 /* TTGTextTagCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGTextTagCollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +149,7 @@
 				848FDFBA1D7672F1005EB2A4 /* AppDelegate */,
 				848FDFB91D7672D3005EB2A4 /* SearchController */,
 				848FDFC61D767349005EB2A4 /* SearchView */,
-				848FDFE01D768C46005EB2A4 /* EYTagView */,
+				848FDFEB1D76CF80005EB2A4 /* TTGTagCollectionView */,
 				847073F51D756D7F00D6F90B /* Assets.xcassets */,
 				847073F71D756D7F00D6F90B /* LaunchScreen.storyboard */,
 				847073FA1D756D7F00D6F90B /* Info.plist */,
@@ -219,15 +228,21 @@
 			path = SearchView;
 			sourceTree = "<group>";
 		};
-		848FDFE01D768C46005EB2A4 /* EYTagView */ = {
+		848FDFEB1D76CF80005EB2A4 /* TTGTagCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				848FDFE11D768C55005EB2A4 /* EYTagView.h */,
-				848FDFE21D768C55005EB2A4 /* EYTagView.m */,
-				848FDFE31D768C55005EB2A4 /* EYTextField.h */,
-				848FDFE41D768C55005EB2A4 /* EYTextField.m */,
+				848FDFEC1D76CFCC005EB2A4 /* TTGTagCollectionCell.h */,
+				848FDFED1D76CFCC005EB2A4 /* TTGTagCollectionCell.m */,
+				848FDFEE1D76CFCC005EB2A4 /* TTGTagCollectionLayout.h */,
+				848FDFEF1D76CFCC005EB2A4 /* TTGTagCollectionLayout.m */,
+				848FDFF01D76CFCC005EB2A4 /* TTGTagCollectionUtil.h */,
+				848FDFF11D76CFCC005EB2A4 /* TTGTagCollectionUtil.m */,
+				848FDFF21D76CFCC005EB2A4 /* TTGTagCollectionView.h */,
+				848FDFF31D76CFCC005EB2A4 /* TTGTagCollectionView.m */,
+				848FDFF41D76CFCC005EB2A4 /* TTGTextTagCollectionView.h */,
+				848FDFF51D76CFCC005EB2A4 /* TTGTextTagCollectionView.m */,
 			);
-			path = EYTagView;
+			path = TTGTagCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,17 +381,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848FDFE61D768C55005EB2A4 /* EYTextField.m in Sources */,
 				848FDFD91D76736D005EB2A4 /* SearchView.m in Sources */,
 				848FDFD51D76736D005EB2A4 /* SearchResultTableViewCell.m in Sources */,
+				848FDFFA1D76CFCC005EB2A4 /* TTGTextTagCollectionView.m in Sources */,
 				847073EB1D756D7F00D6F90B /* main.m in Sources */,
-				848FDFE51D768C55005EB2A4 /* EYTagView.m in Sources */,
 				848FDFD71D76736D005EB2A4 /* SearchTagTableViewCell.m in Sources */,
 				848FDFC51D767336005EB2A4 /* AppDelegate.m in Sources */,
+				848FDFF91D76CFCC005EB2A4 /* TTGTagCollectionView.m in Sources */,
 				848FDFDD1D76796D005EB2A4 /* SearchTagHeadView.m in Sources */,
+				848FDFF61D76CFCC005EB2A4 /* TTGTagCollectionCell.m in Sources */,
 				848FDFC21D767329005EB2A4 /* SearchViewController.m in Sources */,
 				848FDFD31D76736D005EB2A4 /* SearchDetailView.m in Sources */,
 				848FDFC01D767329005EB2A4 /* SearchDetailViewController.m in Sources */,
+				848FDFF81D76CFCC005EB2A4 /* TTGTagCollectionUtil.m in Sources */,
+				848FDFF71D76CFCC005EB2A4 /* TTGTagCollectionLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,7 +20,7 @@
                         <color key="textColor" red="0.44705882349999998" green="0.50980392159999999" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CO-p5-STU" customClass="EYTagView">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CO-p5-STU" customClass="TTGTextTagCollectionView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -38,7 +38,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="contentEmptyLabel" destination="xjK-tI-jQr" id="tpK-RH-A5j"/>
-                <outlet property="tagView" destination="4CO-p5-STU" id="aNS-Wi-61x"/>
+                <outlet property="tagCollectionView" destination="4CO-p5-STU" id="8BF-tv-GIY"/>
             </connections>
             <point key="canvasLocation" x="408.5" y="431"/>
         </tableViewCell>

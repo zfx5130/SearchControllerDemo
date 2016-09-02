@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EYTagView.h"
+#import "TTGTextTagCollectionView.h"
 
 @interface SearchTagTableViewCell : UITableViewCell
+<TTGTextTagCollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *contentEmptyLabel;
 
-@property (weak, nonatomic) IBOutlet EYTagView *tagView;
+@property (weak, nonatomic) IBOutlet TTGTextTagCollectionView *tagCollectionView;
+
+- (void)renderCellWithTags:(NSArray *)tags;
 
 @end
