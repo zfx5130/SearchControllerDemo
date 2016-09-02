@@ -12,6 +12,30 @@
 #import "SearchResultTableViewCell.h"
 #import "SearchTagHeadView.h"
 
+
+@interface UIImage (SKTagView)
+
++ (UIImage *)imageWithColor: (UIColor *)color;
+
+@end
+
+@implementation UIImage (SKTagView)
+
++ (UIImage *)imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+@end
+
 @interface SearchDetailViewController ()
 <SearchDetailViewDelegate,
 UITableViewDelegate,
@@ -23,6 +47,7 @@ UITableViewDataSource>
 @property (strong, nonatomic) SearchDetailView *searchDetailView;
 
 @property (copy, nonatomic) NSArray *tags;
+@property (copy, nonatomic) NSArray *colors;
 
 @end
 
@@ -34,6 +59,11 @@ UITableViewDataSource>
     [super viewDidLoad];
     [self setupSearchView];
     [self registerCells];
+    self.colors = @[
+                    [UIColor redColor],
+                    [UIColor greenColor],
+                    [UIColor blueColor]
+                    ];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,6 +71,28 @@ UITableViewDataSource>
 }
 
 #pragma mark - Private
+
+- (void)configureCell:(SearchTagTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    
+    cell.tagView.preferredMaxLayoutWidth = [UIScreen mainScreen].bounds.size.width;
+    cell.tagView.padding = UIEdgeInsetsMake(12, 12, 12, 12);
+    cell.tagView.interitemSpacing = 15;
+    cell.tagView.lineSpacing = 10;
+    [cell.tagView removeAllTags];
+    
+    //Add Tags
+    NSLog(@":::%@", self.tags);
+    [self.tags enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        SKTag *tag = [SKTag tagWithText:obj];
+        tag.textColor = [UIColor whiteColor];
+        tag.fontSize = 15;
+        tag.padding = UIEdgeInsetsMake(13.5, 12.5, 13.5, 12.5);
+        tag.cornerRadius = 5;
+        tag.bgImg = [UIImage imageWithColor:self.colors[idx % self.colors.count]];
+        tag.enable = NO;
+        [cell.tagView addTag:tag];
+    }];
+}
 
 - (void)setupSearchView {
     self.navigationController.navigationBar.translucent = NO;
@@ -113,8 +165,9 @@ UITableViewDataSource>
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == self.searchTagTableView) {
-        SearchTagTableViewCell *cell = (SearchTagTableViewCell *)[self tableView:tableView cellForRowAtIndexPath:indexPath];
-        return cell.frame.size.height;
+        SearchTagTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([SearchTagTableViewCell class])];
+        [self configureCell:cell atIndexPath: indexPath];
+        return [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height + 1;
     }
     return 50.0f;
 }
@@ -169,7 +222,7 @@ UITableViewDataSource>
             [cell setLayoutMargins:UIEdgeInsetsZero];
         }
         cell.contentEmptyLabel.hidden = indexPath.section != 0;
-        [cell renderCellWithTags:self.tags];
+        [self configureCell:cell atIndexPath:indexPath];
         return cell;
     }
     SearchResultTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([SearchResultTableViewCell class])];

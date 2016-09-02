@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842FC9381D7974B900A0C3A4 /* SKTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FC9331D7974B900A0C3A4 /* SKTag.m */; };
+		842FC9391D7974B900A0C3A4 /* SKTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FC9351D7974B900A0C3A4 /* SKTagButton.m */; };
+		842FC93A1D7974B900A0C3A4 /* SKTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FC9371D7974B900A0C3A4 /* SKTagView.m */; };
 		847073EB1D756D7F00D6F90B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 847073EA1D756D7F00D6F90B /* main.m */; };
 		847073F41D756D7F00D6F90B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847073F21D756D7F00D6F90B /* Main.storyboard */; };
 		847073F61D756D7F00D6F90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847073F51D756D7F00D6F90B /* Assets.xcassets */; };
@@ -27,11 +30,6 @@
 		848FDFDA1D76736D005EB2A4 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FDFD21D76736D005EB2A4 /* SearchView.xib */; };
 		848FDFDD1D76796D005EB2A4 /* SearchTagHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFDC1D76796D005EB2A4 /* SearchTagHeadView.m */; };
 		848FDFDF1D76797D005EB2A4 /* SearchTagHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FDFDE1D76797D005EB2A4 /* SearchTagHeadView.xib */; };
-		848FDFF61D76CFCC005EB2A4 /* TTGTagCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFED1D76CFCC005EB2A4 /* TTGTagCollectionCell.m */; };
-		848FDFF71D76CFCC005EB2A4 /* TTGTagCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFEF1D76CFCC005EB2A4 /* TTGTagCollectionLayout.m */; };
-		848FDFF81D76CFCC005EB2A4 /* TTGTagCollectionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFF11D76CFCC005EB2A4 /* TTGTagCollectionUtil.m */; };
-		848FDFF91D76CFCC005EB2A4 /* TTGTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFF31D76CFCC005EB2A4 /* TTGTagCollectionView.m */; };
-		848FDFFA1D76CFCC005EB2A4 /* TTGTextTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FDFF51D76CFCC005EB2A4 /* TTGTextTagCollectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		842FC9321D7974B900A0C3A4 /* SKTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTag.h; sourceTree = "<group>"; };
+		842FC9331D7974B900A0C3A4 /* SKTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTag.m; sourceTree = "<group>"; };
+		842FC9341D7974B900A0C3A4 /* SKTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagButton.h; sourceTree = "<group>"; };
+		842FC9351D7974B900A0C3A4 /* SKTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagButton.m; sourceTree = "<group>"; };
+		842FC9361D7974B900A0C3A4 /* SKTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagView.h; sourceTree = "<group>"; };
+		842FC9371D7974B900A0C3A4 /* SKTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagView.m; sourceTree = "<group>"; };
 		847073E61D756D7F00D6F90B /* SearchControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847073EA1D756D7F00D6F90B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		847073F31D756D7F00D6F90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,16 +90,6 @@
 		848FDFDB1D76796D005EB2A4 /* SearchTagHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTagHeadView.h; sourceTree = "<group>"; };
 		848FDFDC1D76796D005EB2A4 /* SearchTagHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTagHeadView.m; sourceTree = "<group>"; };
 		848FDFDE1D76797D005EB2A4 /* SearchTagHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTagHeadView.xib; sourceTree = "<group>"; };
-		848FDFEC1D76CFCC005EB2A4 /* TTGTagCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGTagCollectionCell.h; sourceTree = "<group>"; };
-		848FDFED1D76CFCC005EB2A4 /* TTGTagCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGTagCollectionCell.m; sourceTree = "<group>"; };
-		848FDFEE1D76CFCC005EB2A4 /* TTGTagCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGTagCollectionLayout.h; sourceTree = "<group>"; };
-		848FDFEF1D76CFCC005EB2A4 /* TTGTagCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGTagCollectionLayout.m; sourceTree = "<group>"; };
-		848FDFF01D76CFCC005EB2A4 /* TTGTagCollectionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGTagCollectionUtil.h; sourceTree = "<group>"; };
-		848FDFF11D76CFCC005EB2A4 /* TTGTagCollectionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGTagCollectionUtil.m; sourceTree = "<group>"; };
-		848FDFF21D76CFCC005EB2A4 /* TTGTagCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGTagCollectionView.h; sourceTree = "<group>"; };
-		848FDFF31D76CFCC005EB2A4 /* TTGTagCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGTagCollectionView.m; sourceTree = "<group>"; };
-		848FDFF41D76CFCC005EB2A4 /* TTGTextTagCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGTextTagCollectionView.h; sourceTree = "<group>"; };
-		848FDFF51D76CFCC005EB2A4 /* TTGTextTagCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGTextTagCollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +117,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842FC9311D7974A500A0C3A4 /* SKTagView */ = {
+			isa = PBXGroup;
+			children = (
+				842FC9321D7974B900A0C3A4 /* SKTag.h */,
+				842FC9331D7974B900A0C3A4 /* SKTag.m */,
+				842FC9341D7974B900A0C3A4 /* SKTagButton.h */,
+				842FC9351D7974B900A0C3A4 /* SKTagButton.m */,
+				842FC9361D7974B900A0C3A4 /* SKTagView.h */,
+				842FC9371D7974B900A0C3A4 /* SKTagView.m */,
+			);
+			path = SKTagView;
+			sourceTree = "<group>";
+		};
 		847073DD1D756D7F00D6F90B = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +156,7 @@
 				848FDFBA1D7672F1005EB2A4 /* AppDelegate */,
 				848FDFB91D7672D3005EB2A4 /* SearchController */,
 				848FDFC61D767349005EB2A4 /* SearchView */,
-				848FDFEB1D76CF80005EB2A4 /* TTGTagCollectionView */,
+				842FC9311D7974A500A0C3A4 /* SKTagView */,
 				847073F51D756D7F00D6F90B /* Assets.xcassets */,
 				847073F71D756D7F00D6F90B /* LaunchScreen.storyboard */,
 				847073FA1D756D7F00D6F90B /* Info.plist */,
@@ -226,23 +233,6 @@
 				848FDFDE1D76797D005EB2A4 /* SearchTagHeadView.xib */,
 			);
 			path = SearchView;
-			sourceTree = "<group>";
-		};
-		848FDFEB1D76CF80005EB2A4 /* TTGTagCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				848FDFEC1D76CFCC005EB2A4 /* TTGTagCollectionCell.h */,
-				848FDFED1D76CFCC005EB2A4 /* TTGTagCollectionCell.m */,
-				848FDFEE1D76CFCC005EB2A4 /* TTGTagCollectionLayout.h */,
-				848FDFEF1D76CFCC005EB2A4 /* TTGTagCollectionLayout.m */,
-				848FDFF01D76CFCC005EB2A4 /* TTGTagCollectionUtil.h */,
-				848FDFF11D76CFCC005EB2A4 /* TTGTagCollectionUtil.m */,
-				848FDFF21D76CFCC005EB2A4 /* TTGTagCollectionView.h */,
-				848FDFF31D76CFCC005EB2A4 /* TTGTagCollectionView.m */,
-				848FDFF41D76CFCC005EB2A4 /* TTGTextTagCollectionView.h */,
-				848FDFF51D76CFCC005EB2A4 /* TTGTextTagCollectionView.m */,
-			);
-			path = TTGTagCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,20 +371,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842FC9381D7974B900A0C3A4 /* SKTag.m in Sources */,
 				848FDFD91D76736D005EB2A4 /* SearchView.m in Sources */,
 				848FDFD51D76736D005EB2A4 /* SearchResultTableViewCell.m in Sources */,
-				848FDFFA1D76CFCC005EB2A4 /* TTGTextTagCollectionView.m in Sources */,
+				842FC93A1D7974B900A0C3A4 /* SKTagView.m in Sources */,
 				847073EB1D756D7F00D6F90B /* main.m in Sources */,
 				848FDFD71D76736D005EB2A4 /* SearchTagTableViewCell.m in Sources */,
 				848FDFC51D767336005EB2A4 /* AppDelegate.m in Sources */,
-				848FDFF91D76CFCC005EB2A4 /* TTGTagCollectionView.m in Sources */,
 				848FDFDD1D76796D005EB2A4 /* SearchTagHeadView.m in Sources */,
-				848FDFF61D76CFCC005EB2A4 /* TTGTagCollectionCell.m in Sources */,
+				842FC9391D7974B900A0C3A4 /* SKTagButton.m in Sources */,
 				848FDFC21D767329005EB2A4 /* SearchViewController.m in Sources */,
 				848FDFD31D76736D005EB2A4 /* SearchDetailView.m in Sources */,
 				848FDFC01D767329005EB2A4 /* SearchDetailViewController.m in Sources */,
-				848FDFF81D76CFCC005EB2A4 /* TTGTagCollectionUtil.m in Sources */,
-				848FDFF71D76CFCC005EB2A4 /* TTGTagCollectionLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
