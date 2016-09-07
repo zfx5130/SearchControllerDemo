@@ -76,6 +76,8 @@ SKTagViewDelegate>
     cell.tagView.lineSpacing = 10;
     [cell.tagView removeAllTags];
     if (indexPath.section == 0) {
+        cell.tagView.hidden = self.historyTags.count == 0 ;
+        cell.contentEmptyLabel.hidden = !cell.tagView.hidden;
         [self.historyTags enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             SKTag *tag = [SKTag tagWithText:obj];
             tag.textColor =  [UIColor colorWithRed:81 / 255.0f green:81 / 255.0f blue:81/255.0f alpha:1.0f];
@@ -155,11 +157,12 @@ SKTagViewDelegate>
 
 - (NSArray *)historyTags {
     if (!_historyTags) {
-        _historyTags = @[@"呵呵呵呵",
-                         @"面膜",
-                         @"火兔",
-                         @"挖地方",
-                         @"阿道夫"];
+//        _historyTags = @[@"呵呵呵呵",
+//                         @"面膜",
+//                         @"火兔",
+//                         @"挖地方",
+//                         @"阿道夫"];
+        _historyTags = [NSArray array];
     }
     return _historyTags;
 }
