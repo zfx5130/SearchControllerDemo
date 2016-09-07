@@ -155,6 +155,9 @@
 #pragma mark - IBActions
 
 - (void)onTag: (UIButton *)btn {
+    if ([self.delegate respondsToSelector:@selector(tagButtonDidSelectedForTagTitle:)]) {
+        [self.delegate tagButtonDidSelectedForTagTitle:btn.titleLabel.text];
+    }
     if (self.didTapTagAtIndex) {
         self.didTapTagAtIndex([self.subviews indexOfObject: btn]);
     }

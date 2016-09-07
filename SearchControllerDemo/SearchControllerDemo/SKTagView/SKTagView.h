@@ -8,8 +8,15 @@
 #import <UIKit/UIKit.h>
 #import "SKTag.h"
 
+@protocol SKTagViewDelegate <NSObject>
+
+- (void)tagButtonDidSelectedForTagTitle:(NSString *)title;
+
+@end
+
 @interface SKTagView : UIView
 
+@property (weak, nonatomic, nullable) id <SKTagViewDelegate> delegate;
 @property (assign, nonatomic) UIEdgeInsets padding;
 @property (assign, nonatomic) CGFloat lineSpacing;
 @property (assign, nonatomic) CGFloat interitemSpacing;

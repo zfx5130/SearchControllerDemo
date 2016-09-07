@@ -39,13 +39,13 @@
 @interface SearchDetailViewController ()
 <SearchDetailViewDelegate,
 UITableViewDelegate,
-UITableViewDataSource>
+UITableViewDataSource,
+SKTagViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *searchTagTableView;
 @property (weak, nonatomic) IBOutlet UITableView *searchResultTableView;
 
 @property (strong, nonatomic) SearchDetailView *searchDetailView;
-
 @property (copy, nonatomic) NSArray *tags;
 @property (copy, nonatomic) NSArray *historyTags;
 @property (copy, nonatomic) NSArray *colors;
@@ -75,18 +75,17 @@ UITableViewDataSource>
     cell.tagView.interitemSpacing = 10;
     cell.tagView.lineSpacing = 10;
     [cell.tagView removeAllTags];
-    
     if (indexPath.section == 0) {
         [self.historyTags enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             SKTag *tag = [SKTag tagWithText:obj];
             tag.textColor =  [UIColor colorWithRed:81 / 255.0f green:81 / 255.0f blue:81/255.0f alpha:1.0f];
             tag.fontSize = 14;
             tag.padding = UIEdgeInsetsMake(8, 8, 8, 8);
-            tag.cornerRadius = 8;
+            tag.cornerRadius = 10;
             tag.borderColor = [UIColor lightGrayColor];
             tag.borderWidth = .5f;
             tag.bgImg = [UIImage imageWithColor:[UIColor whiteColor]];
-            tag.enable = NO;
+            tag.enable = YES;
             [cell.tagView addTag:tag];
         }];
     } else {
@@ -95,7 +94,7 @@ UITableViewDataSource>
             tag.textColor = self.colors[idx % self.colors.count];
             tag.fontSize = 14;
             tag.padding = UIEdgeInsetsMake(8, 8, 8, 8);
-            tag.cornerRadius = 8;
+            tag.cornerRadius = 10;
             tag.borderColor = [UIColor lightGrayColor];
             tag.borderWidth = .5f;
             tag.bgImg = [UIImage imageWithColor:[UIColor whiteColor]];
@@ -129,6 +128,12 @@ UITableViewDataSource>
                    bundle:nil];
     [self.searchResultTableView registerNib:searchResultNib
                   forCellReuseIdentifier:NSStringFromClass([SearchResultTableViewCell class])];
+}
+
+#pragma mark - SKTagViewDelegate
+
+- (void)tagButtonDidSelectedForTagTitle:(NSString *)title {
+    NSLog(@"title:::::::%@", title);
 }
 
 #pragma mark - Getters & Setters
@@ -189,10 +194,6 @@ UITableViewDataSource>
 
 
 #pragma mark - UITableViewDelegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"indexPath:::::%@", indexPath);
-}
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     if (self.searchDetailView) {
@@ -260,6 +261,7 @@ UITableViewDataSource>
         }
         cell.contentEmptyLabel.hidden = indexPath.section != 0;
         [self configureCell:cell atIndexPath:indexPath];
+        cell.tagView.delegate = self;
         return cell;
     }
     SearchResultTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([SearchResultTableViewCell class])];
