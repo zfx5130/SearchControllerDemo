@@ -157,12 +157,12 @@ SKTagViewDelegate>
 
 - (NSArray *)historyTags {
     if (!_historyTags) {
-//        _historyTags = @[@"呵呵呵呵",
-//                         @"面膜",
-//                         @"火兔",
-//                         @"挖地方",
-//                         @"阿道夫"];
-        _historyTags = [NSArray array];
+        _historyTags = @[@"呵呵呵呵是短发是阿斯蒂芬安抚阿道夫案发时阿斯蒂芬是打发发顺丰阿斯蒂芬安抚阿萨德",
+                         @"面膜啥都发发发顺丰安抚阿萨德",
+                         @"火兔梵蒂冈地方个梵蒂冈第三个到国服大概是的",
+                         @"挖地方",
+                         @"阿道夫阿道夫爱的个梵蒂冈返回规范和规划方法"];
+        //_historyTags = [NSArray array];
     }
     return _historyTags;
 }
