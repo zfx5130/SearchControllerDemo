@@ -98,7 +98,7 @@ SKTagViewDelegate>
             tag.borderColor = [UIColor lightGrayColor];
             tag.borderWidth = .5f;
             tag.bgImg = [UIImage imageWithColor:[UIColor whiteColor]];
-            tag.enable = NO;
+            tag.enable = YES;
             [cell.tagView addTag:tag];
         }];
     }
